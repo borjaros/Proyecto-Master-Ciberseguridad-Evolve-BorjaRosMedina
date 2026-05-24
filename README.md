@@ -140,12 +140,3 @@ pfSense CE 2.7 | Snort con reglas GPLv2 | Kali Linux | Nmap 7.x | Hydra | Nikto 
 
 ---
 
-## Portfolio Completo
-
-| Proyecto | Descripción | Estado |
-|----------|-------------|--------|
-| [Proyecto 1](../proyecto1-infraestructura-web) | Infraestructura web segura con Apache2, Nginx, SSL y Zabbix | Completado |
-| [Proyecto 2](../proyecto2-magerit-berma) | Análisis de riesgos Magerit v3 sobre BERMA | Completado |
-| **Proyecto 3** | **IDS corporativo pfSense + Snort + análisis Python** | **Completado** |
-| Proyecto 4 | PKI corporativa con CA raíz, CA intermedia y VPN WireGuard | Pendiente |
-| Proyecto 5 | Simulación de incidente completo con MITRE ATT&CK y análisis forense | Pendiente |
