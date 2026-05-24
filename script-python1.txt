@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+"""
+BERMA PKI Manager - Automatización de emisión y revocación de certificados
+Proyecto 4 - Portfolio Ciberseguridad
+"""
+
+import argparse
+import subprocess
+import os
+import sys
+from datetime import datetime
+from pathlib import Path
+
+# Rutas base de la PKI
+PKI_BASE      = Path("/opt/berma-pki")
+INTER_CA_DIR  = PKI_BASE / "intermediate-ca"
+INTER_CONF    = INTER_CA_DIR / "openssl.cnf"
+CERTS_DIR     = PKI_BASE / "certs"
+CRL_DIR       = PKI_BASE / "crl"
+CRL_WEB_DIR   = Path("/var/www/html/crl")
+
+def run_cmd(cmd: list, description: str) -> tuple[int, str, str]:
+    """Ejecuta un comando y devuelve (returncode, stdout, stderr)"""
+    print(f"[*] {description}")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"[!] Error: {result.stderr.strip()}")
+    return result.returncode, result.stdout, result.stderr
+
+def emit_cert(name: str, cert_type: str, email: str = None):
+    """Emite un certificado nuevo firmado por la CA Intermedia"""
+    
+    key_path  = CERTS_DIR / f"{name}.key"
+    csr_path  = CERTS_DIR / f"{name}.csr"
+    cert_path = CERTS_DIR / f"{name}.crt"
+    
+    if cert_path.exists():
+        print(f"[!] Ya existe un certificado para {name}. Usa --revoke primero.")
+        sys.exit(1)
+    
+    # 1. Generar clave privada
+    run_cmd(
+        ["openssl", "genrsa", "-out", str(key_path), "2048"],
+        f"Generando clave privada para {name}"
+    )
+    os.chmod(key_path, 0o400)
+    
+    # 2. Construir subject
+    subject = f"/C=ES/ST=Madrid/O=BERMA Automatizacion e Ingenieria SL/CN={name}"
+    if email:
+        subject += f"/emailAddress={email}"
+    
+    # 3. Generar CSR
+    run_cmd(
+        ["openssl", "req", "-config", str(INTER_CONF),
+         "-key", str(key_path), "-new", "-sha256",
+         "-out", str(csr_path), "-subj", subject],
+        f"Generando CSR para {name}"
+    )
+    
+    # 4. Firmar con CA Intermedia
+    extension = "usr_cert" if cert_type == "client" else "server_cert"
+    rc, _, _ = run_cmd(
+        ["openssl", "ca", "-config", str(INTER_CONF),
+         "-extensions", extension, "-days", "375",
+         "-notext", "-md", "sha256", "-batch",
+         "-in", str(csr_path), "-out", str(cert_path)],
+        f"Firmando certificado {name} como {cert_type}"
+    )
+    
+    if rc == 0:
+        print(f"[+] Certificado emitido: {cert_path}")
+        print(f"[+] Clave privada:       {key_path}")
+        # Limpiar CSR (ya no es necesario)
+        csr_path.unlink()
+    else:
+        print("[!] Fallo en la emisión del certificado")
+        sys.exit(1)
+
+def revoke_cert(name: str, reason: str = "unspecified"):
+    """Revoca un certificado y regenera la CRL"""
+    
+    cert_path = CERTS_DIR / f"{name}.crt"
+    
+    if not cert_path.exists():
+        print(f"[!] No se encuentra el certificado: {cert_path}")
+        sys.exit(1)
+    
+    # Razones válidas según RFC 5280
+    valid_reasons = [
+        "unspecified", "keyCompromise", "CACompromise",
+        "affiliationChanged", "superseded", "cessationOfOperation",
+        "certificateHold"
+    ]
+    if reason not in valid_reasons:
+        print(f"[!] Razón inválida. Opciones: {', '.join(valid_reasons)}")
+        sys.exit(1)
+    
+    # Revocar
+    rc, _, _ = run_cmd(
+        ["openssl", "ca", "-config", str(INTER_CONF),
+         "-revoke", str(cert_path), "-crl_reason", reason],
+        f"Revocando certificado de {name} (razón: {reason})"
+    )
+    
+    if rc == 0:
+        print(f"[+] Certificado de {name} revocado correctamente")
+        update_crl()
+    else:
+        print("[!] Error en la revocación")
+        sys.exit(1)
+
+def update_crl():
+    """Regenera la CRL y la publica en el servidor web"""
+    
+    crl_path = CRL_DIR / "intermediate.crl"
+    
+    rc, _, _ = run_cmd(
+        ["openssl", "ca", "-config", str(INTER_CONF),
+         "-gencrl", "-out", str(crl_path)],
+        "Generando nueva CRL"
+    )
+    
+    if rc == 0:
+        # Publicar en Apache
+        import shutil
+        CRL_WEB_DIR.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(crl_path, CRL_WEB_DIR / "intermediate.crl")
+        print(f"[+] CRL publicada en http://192.168.100.10/crl/intermediate.crl")
+        print(f"[+] Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+def list_certs():
+    """Lista todos los certificados emitidos con su estado"""
+    index_path = INTER_CA_DIR / "index.txt"
+    print(f"\n{'Estado':<10} {'Fecha exp.':<20} {'Serial':<10} {'Common Name'}")
+    print("-" * 60)
+    with open(index_path) as f:
+        for line in f:
+            parts = line.strip().split('\t')
+            if len(parts) >= 6:
+                status = {"V": "VÁLIDO", "R": "REVOCADO", "E": "EXPIRADO"}.get(parts[0], parts[0])
+                print(f"{status:<10} {parts[1]:<20} {parts[3]:<10} {parts[5]}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="BERMA PKI Manager - Gestión de certificados X.509",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Ejemplos de uso:
+  Emitir cert de cliente:  sudo python3 pki_manager.py emit --name tecnico02 --type client --email tecnico02@berma.local
+  Emitir cert de servidor: sudo python3 pki_manager.py emit --name vpn-server --type server
+  Revocar certificado:     sudo python3 pki_manager.py revoke --name tecnico02 --reason keyCompromise
+  Listar certificados:     sudo python3 pki_manager.py list
+  Actualizar CRL:          sudo python3 pki_manager.py update-crl
+        """
+    )
+    
+    subparsers = parser.add_subparsers(dest="command")
+    
+    # Subcomando emit
+    emit_parser = subparsers.add_parser("emit", help="Emitir nuevo certificado")
+    emit_parser.add_argument("--name",  required=True, help="Nombre del certificado (CN)")
+    emit_parser.add_argument("--type",  required=True, choices=["client", "server"])
+    emit_parser.add_argument("--email", help="Email (solo para certificados de cliente)")
+    
+    # Subcomando revoke
+    rev_parser = subparsers.add_parser("revoke", help="Revocar certificado")
+    rev_parser.add_argument("--name",   required=True)
+    rev_parser.add_argument("--reason", default="unspecified")
+    
+    # Subcomando list
+    subparsers.add_parser("list", help="Listar todos los certificados")
+    
+    # Subcomando update-crl
+    subparsers.add_parser("update-crl", help="Regenerar y publicar CRL")
+    
+    args = parser.parse_args()
+    
+    if args.command == "emit":
+        emit_cert(args.name, args.type, getattr(args, "email", None))
+    elif args.command == "revoke":
+        revoke_cert(args.name, args.reason)
+    elif args.command == "list":
+        list_certs()
+    elif args.command == "update-crl":
+        update_crl()
+    else:
+        parser.print_help()
+
+if __name__ == "__main__":
+    if os.geteuid() != 0:
+        print("[!] Este script requiere privilegios root (sudo)")
+        sys.exit(1)
+    main()
