@@ -1,0 +1,2 @@
+# Proyecto-Master-Ciberseguridad-Evolve-BorjaRosMedina
+He creado una empresa ficticia, a la cual le he realizado un análisis del riesgo de activos (MAGERIT). He creado su infraestructura web simulando la que tendría en la realidad. La he securizado y creado automatismos de monitorización y detección, junto con sistemas de protección y le he creado su propia CA y VPN, junto a otras características..
