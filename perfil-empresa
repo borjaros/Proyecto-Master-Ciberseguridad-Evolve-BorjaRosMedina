@@ -1,0 +1,41 @@
+##### 1. Datos Corporativos
+BERMA Automatización e Ingeniería S.L. [Fundada 2011]
+Polígono Industrial Los Olivos, Getafe (Madrid)
+##### 2. Servicios prestados
+- Diseño e implementación de SCADA
+- Programación PLC
+- Mantenimiento remoto OT
+- Industrias 4.0 / IIoT
+##### 3. Clientes y mercado
+Industrias de agua, químicos y alimentarias
+##### 4. Estructura organizativa
+- Dirección general (propietario)
+- Ingeniería y proyectos (8 ingenieros con acceso a TIA, SCADA y planos)
+- Operaciones y taller (5 técnicos de campo con portátiles y acceso remoto a clientes)
+- Administración (2 personas para nóminas, contabilidad y datos RRHH)
+- Comercial (2 agentes con acceso a CRM, correo y ofertas técnicas)
+- Responsable IT (1 ingeniero encargado parcialmente a IT)
+
+##### 5. Infraestructuras IT (y seguridad inicial)
+- Windows server 2019 (Active Directory + File server)
+- Firewall MikorTik RB4011 de perímetro corporativo (sin IDS, sin segmentación de VLANs)
+- 5 Portátiles de campo (sin cifrado de disco, se conectan a redes de cliente y a VPN corporativa)
+- Microsoft 365 (sin MFA, sin DLP)
+- TeamViewer (acceso remoto a sistemas de clientes)
+##### 6. Infraestructuras OT (y seguridad inical)
+- 2x Siemens SIMATIC S7-1500 (firmware sin actualizar desde 2021)[PLC]
+- Siemens SIMATICA TP12OO (credenciales por defecto, acceso a web en red interna)  [HMI]
+##### 7. Dependencias externas
+- Telefónica - Fibra principal
+- Microsoft 365 - correo y ofimática
+- Siemens - soporte TIA
+- Gestoría Fiscal externa - acceso FTP a datos RRHH
+- Teamviewer - acceso remoto a clientes
+
+
+##### 8. Datos que gestiona
+- Código fuente de PLCs (know-how propio + código clientes + almacenado en File server sin control de acceso granulado)
+- Proyectos SCADA de clientes (datos confidenciales del proceso industrial en NAS sin cifrado)
+- Memorias de cálculo, planos eléctricos y esquemas de automatización
+- Ofertas técnicas y presupuestos (en correo sin cifrar)
+- Datos de contacto de clietnes y proveedores
