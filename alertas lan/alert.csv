@@ -1,0 +1,194 @@
+05/15/26-12:01:06.436425 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.1,,192.168.100.100,,54036,Misc activity,3,alert,Allow
+05/15/26-12:01:06.437665 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,38003,Misc activity,3,alert,Allow
+05/15/26-12:11:39.470111 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,64881,Misc activity,3,alert,Allow
+05/15/26-12:11:40.497055 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,64996,Misc activity,3,alert,Allow
+05/15/26-12:11:41.520134 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,65161,Misc activity,3,alert,Allow
+05/15/26-12:11:42.547128 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,65403,Misc activity,3,alert,Allow
+05/15/26-12:11:43.568370 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,120,Misc activity,3,alert,Allow
+05/15/26-12:11:44.591897 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,373,Misc activity,3,alert,Allow
+05/15/26-12:11:45.619115 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,557,Misc activity,3,alert,Allow
+05/15/26-12:11:46.638194 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,734,Misc activity,3,alert,Allow
+05/15/26-12:11:47.661627 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,859,Misc activity,3,alert,Allow
+05/15/26-12:11:48.776263 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,1074,Misc activity,3,alert,Allow
+05/15/26-12:11:49.808607 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,1304,Misc activity,3,alert,Allow
+05/15/26-12:11:50.829074 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,1487,Misc activity,3,alert,Allow
+05/15/26-12:11:51.851959 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,1591,Misc activity,3,alert,Allow
+05/15/26-12:16:42.130936 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,39082,Misc activity,3,alert,Allow
+05/15/26-12:16:43.146479 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,39143,Misc activity,3,alert,Allow
+05/15/26-12:16:44.162407 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,39163,Misc activity,3,alert,Allow
+05/15/26-12:16:45.186059 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,39386,Misc activity,3,alert,Allow
+05/15/26-12:16:46.208863 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,39449,Misc activity,3,alert,Allow
+05/15/26-12:17:12.970060 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41085,Misc activity,3,alert,Allow
+05/15/26-12:17:13.971782 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41224,Misc activity,3,alert,Allow
+05/15/26-12:17:14.995548 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41288,Misc activity,3,alert,Allow
+05/15/26-12:17:16.019434 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41315,Misc activity,3,alert,Allow
+05/15/26-12:17:17.042787 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41556,Misc activity,3,alert,Allow
+05/15/26-12:17:18.066466 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41796,Misc activity,3,alert,Allow
+05/15/26-12:17:19.089777 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41868,Misc activity,3,alert,Allow
+05/15/26-12:17:20.114020 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,41975,Misc activity,3,alert,Allow
+05/15/26-12:17:21.137744 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,42125,Misc activity,3,alert,Allow
+05/15/26-12:17:22.161498 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,42266,Misc activity,3,alert,Allow
+05/15/26-12:19:32.716914 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,46328,Misc activity,3,alert,Allow
+05/15/26-12:19:33.749271 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,46367,Misc activity,3,alert,Allow
+05/15/26-12:19:34.770038 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,46578,Misc activity,3,alert,Allow
+05/15/26-12:19:35.792559 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,46723,Misc activity,3,alert,Allow
+05/15/26-12:19:36.817094 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,46843,Misc activity,3,alert,Allow
+05/15/26-12:19:37.840036 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,47020,Misc activity,3,alert,Allow
+05/15/26-12:19:38.864326 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,47253,Misc activity,3,alert,Allow
+05/15/26-12:19:39.887579 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,47471,Misc activity,3,alert,Allow
+05/15/26-12:19:40.909963 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,47488,Misc activity,3,alert,Allow
+05/15/26-12:23:55.246066 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,24858,Misc activity,3,alert,Allow
+05/15/26-12:23:56.245358 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,24877,Misc activity,3,alert,Allow
+05/15/26-12:23:57.270071 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,25008,Misc activity,3,alert,Allow
+05/15/26-12:23:58.293139 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,25048,Misc activity,3,alert,Allow
+05/15/26-12:23:59.315392 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,25097,Misc activity,3,alert,Allow
+05/15/26-12:24:00.340960 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,25239,Misc activity,3,alert,Allow
+05/15/26-12:24:34.230107 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.1,,192.168.100.10,,31310,Misc activity,3,alert,Allow
+05/15/26-12:24:34.230510 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.10,,192.168.100.1,,19728,Misc activity,3,alert,Allow
+05/15/26-12:24:35.257369 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.1,,192.168.100.10,,851,Misc activity,3,alert,Allow
+05/15/26-12:24:35.258087 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.10,,192.168.100.1,,19846,Misc activity,3,alert,Allow
+05/15/26-12:24:36.286839 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.1,,192.168.100.10,,21097,Misc activity,3,alert,Allow
+05/15/26-12:24:36.288111 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.10,,192.168.100.1,,19963,Misc activity,3,alert,Allow
+05/15/26-12:24:44.885683 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,29700,Misc activity,3,alert,Allow
+05/15/26-12:24:45.898417 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,29896,Misc activity,3,alert,Allow
+05/15/26-12:24:46.916566 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,30050,Misc activity,3,alert,Allow
+05/15/26-12:24:47.933515 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,192.168.100.1,,30195,Misc activity,3,alert,Allow
+05/15/26-12:25:51.757028 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,63082,Misc activity,3,alert,Allow
+05/15/26-12:25:52.765705 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,63327,Misc activity,3,alert,Allow
+05/15/26-12:25:53.789829 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,63487,Misc activity,3,alert,Allow
+05/15/26-12:25:54.814971 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,63524,Misc activity,3,alert,Allow
+05/15/26-12:25:55.840276 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,63760,Misc activity,3,alert,Allow
+05/15/26-12:35:52.441622 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,23435,Misc activity,3,alert,Allow
+05/15/26-12:35:53.459465 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,23539,Misc activity,3,alert,Allow
+05/15/26-12:35:54.485031 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,23706,Misc activity,3,alert,Allow
+05/15/26-12:35:55.508983 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,23826,Misc activity,3,alert,Allow
+05/15/26-12:35:56.531778 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24077,Misc activity,3,alert,Allow
+05/15/26-12:35:57.556861 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24105,Misc activity,3,alert,Allow
+05/15/26-12:36:10.450561 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24384,Misc activity,3,alert,Allow
+05/15/26-12:36:11.476086 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24469,Misc activity,3,alert,Allow
+05/15/26-12:36:12.500155 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24504,Misc activity,3,alert,Allow
+05/15/26-12:36:13.525283 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24591,Misc activity,3,alert,Allow
+05/15/26-12:36:14.548539 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24609,Misc activity,3,alert,Allow
+05/15/26-12:36:15.575750 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24630,Misc activity,3,alert,Allow
+05/15/26-12:36:16.596623 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,24712,Misc activity,3,alert,Allow
+05/15/26-12:37:22.083175 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.100,,31659,Misc activity,3,alert,Allow
+05/15/26-12:37:23.094879 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.100,,31855,Misc activity,3,alert,Allow
+05/15/26-12:37:24.117431 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.100,,31931,Misc activity,3,alert,Allow
+05/15/26-12:37:25.142136 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.100,,32083,Misc activity,3,alert,Allow
+05/15/26-12:37:26.166145 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.100,,32227,Misc activity,3,alert,Allow
+05/15/26-12:51:11.387082 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,29926,Misc activity,3,alert,Allow
+05/15/26-12:51:11.387780 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,52609,Misc activity,3,alert,Allow
+05/15/26-12:51:12.388369 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,29983,Misc activity,3,alert,Allow
+05/15/26-12:51:12.389163 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,53106,Misc activity,3,alert,Allow
+05/15/26-12:51:13.390230 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,30210,Misc activity,3,alert,Allow
+05/15/26-12:51:13.391126 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,53911,Misc activity,3,alert,Allow
+05/15/26-17:26:56.820166 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,64427,10.10.10.50,110,21023,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:09.586497 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,61657,10.10.10.50,135,14859,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:16.601364 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,41254,10.10.10.50,8081,22812,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:16.600602 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,41254,22813,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:22.817056 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,12081,Misc activity,3,alert,Allow
+05/15/26-17:27:22.817820 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,19007,Misc activity,3,alert,Allow
+05/15/26-17:27:22.843053 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,34437,Misc activity,3,alert,Allow
+05/15/26-17:27:22.843778 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,19021,Misc activity,3,alert,Allow
+05/15/26-17:27:22.944350 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42122,10.10.10.50,53,3397,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:23.122048 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42122,10.10.10.50,53,29496,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:23.275388 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42122,10.10.10.50,53,49416,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:23.428961 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42122,10.10.10.50,53,3112,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:25.156924 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,58928,Misc activity,3,alert,Allow
+05/15/26-17:27:25.157771 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,19766,Misc activity,3,alert,Allow
+05/15/26-17:27:25.182785 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,6892,Misc activity,3,alert,Allow
+05/15/26-17:27:25.183622 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,19771,Misc activity,3,alert,Allow
+05/15/26-17:27:25.283419 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42378,10.10.10.50,53,31013,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:25.460923 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42378,10.10.10.50,53,29302,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:25.615021 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42378,10.10.10.50,53,55726,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:25.767215 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,42378,10.10.10.50,53,19553,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:26.048402 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,41908,10.10.10.50,8081,34211,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:26.216865 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,41894,10.10.10.50,8081,17580,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:26.216333 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,41894,39781,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:26.262471 ,1,9000003,1,"BERMA-003 HMI Web Access - Acceso interfaz Siemens TP1200",TCP,192.168.100.100,56472,10.10.10.50,80,36514,Web Application Attack,1,alert,Allow
+05/15/26-17:27:26.528436 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,41928,10.10.10.50,8081,42126,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:26.527995 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,41928,42128,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:42.033619 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,61260,10.10.10.50,22,48906,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:48.483493 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,55068,10.10.10.50,8081,6390,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:48.482884 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,55068,14655,Unknown Traffic,3,alert,Allow
+05/15/26-17:27:55.102986 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,13418,Misc activity,3,alert,Allow
+05/15/26-17:27:55.103861 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,35204,Misc activity,3,alert,Allow
+05/15/26-17:27:55.128925 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,45824,Misc activity,3,alert,Allow
+05/15/26-17:27:55.129794 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,35207,Misc activity,3,alert,Allow
+05/15/26-17:27:55.229681 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60700,10.10.10.50,53,9310,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:55.407653 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60700,10.10.10.50,53,3908,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:55.560547 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60700,10.10.10.50,53,1833,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:55.712010 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60700,10.10.10.50,53,17473,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:57.439181 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,59960,Misc activity,3,alert,Allow
+05/15/26-17:27:57.439896 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,35961,Misc activity,3,alert,Allow
+05/15/26-17:27:57.464466 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.100,,10.10.10.50,,46326,Misc activity,3,alert,Allow
+05/15/26-17:27:57.465114 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,10.10.10.50,,192.168.100.100,,35973,Misc activity,3,alert,Allow
+05/15/26-17:27:57.566037 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60956,10.10.10.50,53,37774,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:57.752333 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60956,10.10.10.50,53,62614,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:57.908981 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60956,10.10.10.50,53,59622,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:58.061993 ,1,9000007,1,"BERMA-007 Nmap Aggressive Scan - Reconocimiento avanzado detectado",TCP,192.168.100.100,60956,10.10.10.50,53,9189,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:58.306834 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,18513,10.10.10.50,3389,2184,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:27:58.307374 ,1,9000099,1,"BERMA-TEST Ping detectado - Confirmar Snort activo",ICMP,192.168.100.1,,192.168.100.100,,46714,Misc activity,3,alert,Allow
+05/15/26-17:28:02.933549 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,35256,10.10.10.50,8081,33685,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:28:03.036425 ,1,9000003,1,"BERMA-003 HMI Web Access - Acceso interfaz Siemens TP1200",TCP,192.168.100.100,38120,10.10.10.50,80,30451,Web Application Attack,1,alert,Allow
+05/15/26-17:28:03.593886 ,119,31,1,"(http_inspect) UNKNOWN METHOD",TCP,192.168.100.100,38158,10.10.10.50,80,11768,Unknown Traffic,3,alert,Allow
+05/15/26-17:28:03.710141 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,35272,10.10.10.50,8081,59568,Unknown Traffic,3,alert,Allow
+05/15/26-17:28:03.708568 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,35272,32802,Unknown Traffic,3,alert,Allow
+05/15/26-17:28:04.053973 ,119,31,1,"(http_inspect) UNKNOWN METHOD",TCP,192.168.100.100,35430,10.10.10.50,8081,8982,Unknown Traffic,3,alert,Allow
+05/15/26-17:28:12.274830 ,120,8,1,"(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE",TCP,192.168.100.100,32880,10.10.10.50,8081,15363,Unknown Traffic,3,alert,Allow
+05/15/26-17:28:12.274267 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,8081,192.168.100.100,32880,57580,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:23.639937 ,1,9000003,1,"BERMA-003 HMI Web Access - Acceso interfaz Siemens TP1200",TCP,192.168.100.100,50190,10.10.10.50,80,52215,Web Application Attack,1,alert,Allow
+05/15/26-17:35:23.992944 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,37918,10.10.10.50,80,42259,Web Application Attack,1,alert,Allow
+05/15/26-17:35:26.723746 ,119,31,1,"(http_inspect) UNKNOWN METHOD",TCP,192.168.100.100,37918,10.10.10.50,80,42728,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:26.734815 ,120,18,1,"(http_inspect) PROTOCOL-OTHER HTTP server response before client request ",TCP,10.10.10.50,80,192.168.100.100,51496,17854,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:26.734815 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,80,192.168.100.100,51496,17854,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:26.738037 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,51508,10.10.10.50,80,60369,Web Application Attack,1,alert,Allow
+05/15/26-17:35:26.741968 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,51514,10.10.10.50,80,5330,Web Application Attack,1,alert,Allow
+05/15/26-17:35:26.748944 ,120,18,1,"(http_inspect) PROTOCOL-OTHER HTTP server response before client request ",TCP,10.10.10.50,80,192.168.100.100,51516,11334,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:26.748944 ,120,3,1,"(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE",TCP,10.10.10.50,80,192.168.100.100,51516,11334,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:26.754021 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,51522,10.10.10.50,80,2963,Web Application Attack,1,alert,Allow
+05/15/26-17:35:26.760511 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,51522,10.10.10.50,80,2965,Web Application Attack,1,alert,Allow
+05/15/26-17:35:28.719741 ,119,31,1,"(http_inspect) UNKNOWN METHOD",TCP,192.168.100.100,51554,10.10.10.50,80,21074,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:28.851667 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51584,10.10.10.50,80,22662,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:28.860816 ,119,2,1,"(http_inspect) DOUBLE DECODING ATTACK",TCP,192.168.100.100,51600,10.10.10.50,80,10498,Not Suspicious Traffic,3,alert,Allow
+05/15/26-17:35:28.886776 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51600,10.10.10.50,80,10506,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:28.891754 ,119,2,1,"(http_inspect) DOUBLE DECODING ATTACK",TCP,192.168.100.100,51608,10.10.10.50,80,27283,Not Suspicious Traffic,3,alert,Allow
+05/15/26-17:35:28.993854 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51608,10.10.10.50,80,27309,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.009383 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51624,10.10.10.50,80,31453,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.014628 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51630,10.10.10.50,80,48775,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.019299 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51640,10.10.10.50,80,5182,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.077001 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51654,10.10.10.50,80,31815,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.361556 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51664,10.10.10.50,80,32187,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.385273 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51674,10.10.10.50,80,42823,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.393096 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51680,10.10.10.50,80,51039,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.398649 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51686,10.10.10.50,80,32047,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:29.406031 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51710,10.10.10.50,80,33833,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:31.358729 ,119,28,1,"(http_inspect) POST W/O CONTENT-LENGTH OR CHUNKS",TCP,10.10.10.50,80,192.168.100.100,51716,48679,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:31.361957 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51716,10.10.10.50,80,48743,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:32.356914 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51720,10.10.10.50,80,52766,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:32.656442 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51730,10.10.10.50,80,30835,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:32.660296 ,1,9000002,1,"BERMA-002 Port Scan - Enumeracion red corporativa",TCP,192.168.100.100,51742,10.10.10.50,80,53312,Detection of a Network Scan,3,alert,Allow
+05/15/26-17:35:32.696207 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51742,10.10.10.50,80,64139,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:33.033818 ,1,9000003,1,"BERMA-003 HMI Web Access - Acceso interfaz Siemens TP1200",TCP,192.168.100.100,51758,10.10.10.50,80,402,Web Application Attack,1,alert,Allow
+05/15/26-17:35:35.989251 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51758,10.10.10.50,80,1277,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:35.997258 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51770,10.10.10.50,80,63546,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:36.001949 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,51774,10.10.10.50,80,9192,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.273639 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33412,10.10.10.50,80,39115,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.346144 ,119,2,1,"(http_inspect) DOUBLE DECODING ATTACK",TCP,192.168.100.100,33412,10.10.10.50,80,39138,Not Suspicious Traffic,3,alert,Allow
+05/15/26-17:35:37.652865 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33420,10.10.10.50,80,26488,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.667459 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33424,10.10.10.50,80,17388,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.749354 ,119,2,1,"(http_inspect) DOUBLE DECODING ATTACK",TCP,192.168.100.100,33424,10.10.10.50,80,17413,Not Suspicious Traffic,3,alert,Allow
+05/15/26-17:35:37.784397 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33434,10.10.10.50,80,57198,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.789329 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33444,10.10.10.50,80,11254,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:37.832374 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,33446,10.10.10.50,80,58431,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:51.868891 ,120,18,1,"(http_inspect) PROTOCOL-OTHER HTTP server response before client request ",TCP,10.10.10.50,80,192.168.100.100,39638,52344,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:52.779047 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,39646,10.10.10.50,80,53006,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:52.788358 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,39652,10.10.10.50,80,14660,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:52.796143 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,39662,10.10.10.50,80,11086,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:56.021557 ,119,31,1,"(http_inspect) UNKNOWN METHOD",TCP,192.168.100.100,39674,10.10.10.50,80,42450,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:56.798317 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,39674,10.10.10.50,80,42585,Unknown Traffic,3,alert,Allow
+05/15/26-17:35:59.132603 ,119,18,1,"(http_inspect) WEBROOT DIRECTORY TRAVERSAL",TCP,192.168.100.100,57654,10.10.10.50,80,44537,Unknown Traffic,3,alert,Allow
+05/15/26-17:36:00.763066 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,57658,10.10.10.50,80,32798,Web Application Attack,1,alert,Allow
+05/15/26-17:36:00.768515 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,57658,10.10.10.50,80,32799,Web Application Attack,1,alert,Allow
+05/15/26-17:36:00.774585 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,57658,10.10.10.50,80,32800,Web Application Attack,1,alert,Allow
+05/15/26-17:36:00.778286 ,1,9000004,1,"BERMA-004 Web Scanner Nikto - Reconocimiento aplicacion web",TCP,192.168.100.100,57658,10.10.10.50,80,32801,Web Application Attack,1,alert,Allow

@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net" modified="2026-05-17T10:00:00.000Z" agent="draw.io" version="21.0.0">
+  <diagram name="Arquitectura Laboratorio BERMA" id="berma-lab-p3">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TÍTULO -->
+        <mxCell id="100" value="BERMA Automatización e Ingeniería S.L. — Arquitectura IDS Laboratorio Proyecto 3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1F4E79;" vertex="1" parent="1">
+          <mxGeometry x="200" y="30" width="1200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ZONA ATACANTE -->
+        <mxCell id="200" value="RED ATACANTE&#xa;wan-lab | 192.168.100.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#E67E22;strokeWidth=2;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;fontColor=#7D3A00;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="320" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- Windows Laptop Host (Portátil físico) -->
+        <mxCell id="201" value="Portátil Windows 10&#xa;Host Físico&#xa;VirtualBox" style="shape=mxgraph.network.laptop;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="150" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="202" value="Portátil Windows 10&#xa;Host Físico" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="95" y="215" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Kali Linux VM -->
+        <mxCell id="203" value="Kali Linux VM&#xa;192.168.100.100&#xa;eth0: wan-lab" style="shape=mxgraph.network.server;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="204" value="Kali Linux VM&#xa;Atacante" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="95" y="395" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Herramientas Kali -->
+        <mxCell id="205" value="🔍 Nmap -sS -sV -A -Pn&#xa;🔑 Hydra (SSH BruteForce)&#xa;🌐 Nikto (Web Scanner)&#xa;📡 Wireshark (Captura)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD7BE;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="85" y="440" width="210" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Flecha VM host a Kali -->
+        <mxCell id="206" value="contiene" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fontSize=9;" edge="1" source="201" target="203" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ZONA PFSENSE -->
+        <mxCell id="300" value="FIREWALL PERIMETRAL&#xa;fw01-berma.local" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#2E75B6;strokeWidth=2;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;fontColor=#1F4E79;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="380" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- pfSense box -->
+        <mxCell id="301" value="pfSense CE 2.7&#xa;fw01-berma.local&#xa;&#xa;WAN: NAT (internet)&#xa;LAN: 10.10.10.1/24&#xa;OPT1: 192.168.100.1/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#2E75B6;strokeWidth=2;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="180" width="280" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Snort box -->
+        <mxCell id="302" value="🔎 SNORT IDS&#xa;&#xa;Interfaz: LAN-BERMA-IDS&#xa;Reglas: GPLv2 Community&#xa;+ 9 reglas BERMA&#xa;&#xa;Block Offenders: OFF&#xa;Alert to syslog: ON" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="530" y="360" width="280" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- NAT cloud -->
+        <mxCell id="303" value="Internet&#xa;(NAT VirtualBox)&#xa;Actualizaciones Snort" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="570" y="540" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Flecha pfSense a internet -->
+        <mxCell id="304" value="actualizaciones" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;fontSize=9;" edge="1" source="301" target="303" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ZONA PROTEGIDA -->
+        <mxCell id="400" value="RED INTERNA BERMA&#xa;host-only | 10.10.10.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F5;strokeColor=#1E8449;strokeWidth=2;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;fontColor=#0B4A2A;" vertex="1" parent="1">
+          <mxGeometry x="960" y="100" width="360" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- VM Víctima -->
+        <mxCell id="401" value="Ubuntu Server VM&#xa;Víctima&#xa;10.10.10.50" style="shape=mxgraph.network.server;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="402" value="Apache2 | SSH | OpenSSL&#xa;BIND9 | Nginx | Zabbix&#xa;(Infraestructura Proyecto 1)" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="255" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Windows Admin -->
+        <mxCell id="403" value="Windows 10&#xa;Admin / Analista&#xa;10.10.10.254" style="shape=mxgraph.network.laptop;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="380" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="404" value="Web GUI pfSense&#xa;Script Python análisis&#xa;draw.io | GitHub" style="text;html=1;align=center;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="445" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Python Output -->
+        <mxCell id="405" value="📊 analisis_snort_berma.py&#xa;→ alertas_por_tipo.png&#xa;→ timeline.png&#xa;→ ips_atacantes.png" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F5;strokeColor=#1E8449;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="985" y="520" width="270" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHAS DE ATAQUE - Kali a pfSense OPT1 -->
+        <mxCell id="500" value="Ataques&#xa;Nmap / Hydra / Nikto&#xa;192.168.100.0/24" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#E74C3C;strokeWidth=3;fontColor=#C0392B;fontSize=10;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="203" target="301" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHA Snort detecta -->
+        <mxCell id="501" value="⚠ Snort detecta&#xa;y genera alerta" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#E67E22;strokeWidth=2;fontColor=#E67E22;fontSize=10;dashed=1;" edge="1" source="301" target="302" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHA pfSense a víctima (tráfico que pasa) -->
+        <mxCell id="502" value="Tráfico permitido&#xa;por reglas firewall&#xa;10.10.10.0/24" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#E74C3C;strokeWidth=2;fontColor=#C0392B;fontSize=10;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="301" target="401" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHA Admin a pfSense GUI -->
+        <mxCell id="503" value="Web GUI&#xa;https://10.10.10.1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2E75B6;strokeWidth=1;fontColor=#1F4E79;fontSize=9;dashed=1;" edge="1" source="403" target="301" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHA logs a python -->
+        <mxCell id="504" value="exporta logs CSV" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1E8449;strokeWidth=1;fontColor=#0B4A2A;fontSize=9;dashed=1;" edge="1" source="302" target="405" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- LEYENDA -->
+        <mxCell id="600" value="LEYENDA" style="text;html=1;align=left;fontSize=11;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="660" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="601" value="" style="endArrow=block;html=1;strokeColor=#E74C3C;strokeWidth=3;fillColor=#E74C3C;" edge="1" parent="1">
+          <mxGeometry x="60" y="690" width="80" height="10" as="geometry">
+            <mxPoint x="60" y="695" as="sourcePoint" />
+            <mxPoint x="140" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="602" value="Tráfico de ataque (Kali → Víctima)" style="text;html=1;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="685" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="603" value="" style="endArrow=block;html=1;strokeColor=#2E75B6;strokeWidth=2;fillColor=#2E75B6;" edge="1" parent="1">
+          <mxGeometry x="60" y="715" width="80" height="10" as="geometry">
+            <mxPoint x="60" y="720" as="sourcePoint" />
+            <mxPoint x="140" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604" value="Tráfico administrativo / gestión" style="text;html=1;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="710" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="605" value="" style="endArrow=block;html=1;strokeColor=#E67E22;strokeWidth=2;fillColor=#E67E22;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="60" y="740" width="80" height="10" as="geometry">
+            <mxPoint x="60" y="745" as="sourcePoint" />
+            <mxPoint x="140" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="606" value="Alerta Snort / logs exportados" style="text;html=1;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="735" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- NOTA DE LABORATORIO -->
+        <mxCell id="700" value="⚠ NOTA: Entorno de laboratorio virtualizado en VirtualBox.&#xa;Las reglas de firewall OPT1 son permisivas deliberadamente&#xa;para permitir que los ataques lleguen a la víctima y sean&#xa;detectados por Snort. En producción se restringirían por IP,&#xa;puerto y protocolo específicos." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="660" width="480" height="90" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
